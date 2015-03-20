@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Collapse">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/gameBoard"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+       <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="100dip"-->
+            <!--android:layout_height="100dip"-->
+            <!--android:text="2"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textStyle="bold"-->
+            <!--android:padding="5sp"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/piece"-->
+            <!--android:layout_gravity="left|top"-->
+            <!--android:textSize="30dip"-->
+            <!--android:layout_alignTop="@+id/imageView12"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="1"/>-->
+
+
+        <view
+            class="com.example.snelms.collapse.ui.PieceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/piece"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="1"
+            android:layout_gravity="left|top"
+            android:textSize="30dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="5sp"
+            />
+
+        <view
+            class="com.example.snelms.collapse.ui.PieceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/piece"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="0"
+            android:layout_gravity="left|top"
+            android:textSize="30dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="5sp"
+            />
+
+        <view
+            class="com.example.snelms.collapse.ui.PieceView"
+            android:background="@drawable/piece"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="0"
+            style="@style/piece"
+            />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Score 'n' Shit"
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="40dp"/>
+
+
+</RelativeLayout>
